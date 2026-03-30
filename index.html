@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Sanchez | Desarrollador Full-Stack</title>
+    <meta name="description" content="Portafolio profesional de Santiago Sanchez, Desarrollador Full-Stack y estudiante de Informática." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Nav -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">S<span class="highlight">S</span></a>
+          <div class="nav-links">
+            <a href="#about">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#education">Educación</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aquí irán las secciones (Hero, About, etc.) -->
+      <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+          <div class="hero-content fade-in">
+            <span class="hero-greeting">¡Hola! Soy</span>
+            <h1 class="hero-title">Santiago <span class="highlight">Sanchez</span></h1>
+            <h2 class="hero-subtitle">Desarrollador Full-Stack</h2>
+            <p class="hero-description">Estudiante de Informática apasionado por la creación de soluciones eficientes. Actualmente en búsqueda de oportunidades de pasantía para aportar mi conocimiento en desarrollo web y de software, y continuar mi crecimiento profesional.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+              <a href="#contact" class="btn btn-outline">Contactar</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+          <h2 class="section-title fade-in">Sobre Mí</h2>
+          <div class="about-content fade-in">
+            <div class="about-text">
+              <p>Soy estudiante del 6to semestre de <strong>TSU en Informática</strong> en la UTS Charallave, un profesional en formación con un gran deseo de aprender y superar retos tecnológicos.</p>
+              <p>Me considero una persona proactiva y orientada a resultados. He trabajado en proyectos full-stack desde su concepción hasta su despliegue local, gestionando tanto el frontend interactivo como bases de datos relacionales robustas.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills fade-in">
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="skills-container">
+            <!-- Development -->
+            <div class="skill-category">
+              <h3>Desarrollo Frontend</h3>
+              <div class="skill-list">
+                <span class="skill-tag">Vue.js 3</span>
+                <span class="skill-tag">Inertia.js</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Desarrollo Backend & Software</h3>
+              <div class="skill-list">
+                <span class="skill-tag">PHP (Laravel 10)</span>
+                <span class="skill-tag">Python (PyQt6)</span>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-category">
+              <h3>Bases de Datos & Herramientas</h3>
+              <div class="skill-list">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">SQLite</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Laragon / XAMPP</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+          <h2 class="section-title fade-in">Proyectos Destacados</h2>
+          <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card fade-in">
+              <div class="project-content">
+                <h3 class="project-title">Sistema de Gestión de Citas Médicas</h3>
+                <p class="project-description">
+                  Single Page Application (SPA) para el Centro Integral de Reflexología Podal San Alfonso.
+                  Implementé agendamiento de citas, control de horarios y un panel administrativo con roles (Admin/Paciente). Incluye historiales clínicos y dashboards interactivos para ver métricas.
+                </p>
+                <div class="project-tech">
+                  <span class="skill-tag">Laravel 10</span>
+                  <span class="skill-tag">Vue.js 3</span>
+                  <span class="skill-tag">Inertia.js</span>
+                  <span class="skill-tag">Tailwind CSS</span>
+                  <span class="skill-tag">Chart.js</span>
+                </div>
+                <!-- a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size:0.9rem;">Ver en GitHub</a -->
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card fade-in">
+              <div class="project-content">
+                <h3 class="project-title">Sistema de Gestión Académica</h3>
+                <p class="project-description">
+                  Software de escritorio interactivo enfocado en instituciones educativas. Optimizando procesos de control y administración escolar mediante una interfaz gráfica robusta y rápida.
+                </p>
+                <div class="project-tech">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">PyQt6</span>
+                  <span class="skill-tag">SQLite / MySQL</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+          <h2 class="section-title fade-in">Formación Académica</h2>
+          
+          <div class="timeline">
+            <!-- Education 1 -->
+            <div class="timeline-item fade-in">
+              <div class="timeline-content">
+                <div class="timeline-date">2023 - 2026</div>
+                <h3 class="timeline-title">TSU en Informática</h3>
+                <div class="timeline-subtitle">UTS - Charallave</div>
+              </div>
+            </div>
+
+            <!-- Course 1 -->
+            <div class="timeline-item fade-in">
+              <div class="timeline-content">
+                <div class="timeline-date">2023</div>
+                <h3 class="timeline-title">Programación Básica (Web)</h3>
+                <div class="timeline-subtitle">Unexpo</div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">HTML5, CSS3, JavaScript</p>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="timeline-item fade-in">
+              <div class="timeline-content">
+                <div class="timeline-date">2019</div>
+                <h3 class="timeline-title">Informática Básica</h3>
+                <div class="timeline-subtitle">ITCI Santa Teresa del Tuy</div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Mantenimiento de software y sistemas operativos</p>
+              </div>
+            </div>
+            
+            <!-- Education 2 -->
+            <div class="timeline-item fade-in">
+              <div class="timeline-content">
+                <div class="timeline-date">Culminado</div>
+                <h3 class="timeline-title">Bachiller en Ciencias</h3>
+                <div class="timeline-subtitle">U.E.P. Juan Bautista Dalla Costa</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+      
+      <!-- Footer -->
+      <footer id="contact">
+        <div class="footer-container">
+          <h2>Contacto</h2>
+          <p>¿Buscas un desarrollador proactivo para tu equipo?</p>
+          <div class="social-links">
+            <a href="mailto:santiagochez193@gmail.com" class="btn btn-primary">santiagochez193@gmail.com</a>
+            <a href="https://linkedin.com/" target="_blank" class="btn btn-outline">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" class="btn btn-outline">GitHub</a>
+          </div>
+          <p class="copyright">© 2026 Santiago Sanchez.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
