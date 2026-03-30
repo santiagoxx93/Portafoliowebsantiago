@@ -248,13 +248,20 @@ section {
 }
 
 .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background-color: rgba(88, 166, 255, 0.1);
   color: var(--accent-primary);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+.skill-tag i {
+  font-size: 1.2rem;
 }
 
 /* Projects Section */
