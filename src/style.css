@@ -382,30 +382,76 @@ section {
   font-size: 0.95rem;
 }
 
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+  .contact-info, .contact-form-container {
+    flex: 1;
+  }
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.contact-info p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  background-color: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+}
+
 /* Footer */
 footer {
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: var(--bg-secondary);
+  padding: 2rem 2rem;
+  background-color: var(--bg-color);
   border-top: 1px solid var(--border-color);
-}
-
-.footer-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.footer-container p {
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
 }
 
 .copyright {

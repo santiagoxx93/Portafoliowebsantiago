@@ -40,6 +40,11 @@
               <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
               <a href="#contact" class="btn btn-outline">Contactar</a>
             </div>
+            <div class="hero-socials fade-in" style="margin-top: 2rem; display: flex; gap: 1.5rem; font-size: 1.5rem;">
+              <a href="https://linkedin.com/in/santiagoxx93" target="_blank" style="color: var(--text-secondary); transition: color 0.3s;"><i class="devicon-linkedin-plain"></i></a>
+              <a href="https://github.com/santiagoxx93" target="_blank" style="color: var(--text-secondary); transition: color 0.3s;"><i class="devicon-github-original"></i></a>
+              <a href="mailto:santiagochez193@gmail.com" style="color: var(--text-secondary); transition: color 0.3s;">📧</a>
+            </div>
           </div>
         </section>
 
@@ -74,7 +79,7 @@
               <h3>Desarrollo Backend & Software</h3>
               <div class="skill-list">
                 <span class="skill-tag"><i class="devicon-php-plain colored"></i> PHP (Laravel 10)</span>
-                <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python (PyQt6)</span>
+                <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
               </div>
             </div>
 
@@ -112,7 +117,6 @@
                   <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> Inertia.js</span>
                   <span class="skill-tag"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
                 </div>
-                <!-- a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size:0.9rem;">Ver en GitHub</a -->
               </div>
             </div>
 
@@ -180,19 +184,41 @@
           </div>
         </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <h2 class="section-title fade-in">Contacto</h2>
+          <div class="contact-container fade-in">
+            <div class="contact-info">
+              <h3>¡Trabajemos juntos!</h3>
+              <p>Estoy en búsqueda de oportunidades de pasantía para seguir aprendiendo y aportar al equipo. Puedes escribirme por aquí o encontrarme en mis redes sociales.</p>
+              <div class="social-links-vertical" style="margin-top:2rem; display:flex; flex-direction:column; gap:1rem;">
+                <a href="mailto:santiagochez193@gmail.com" class="btn btn-primary" style="text-align:center;"><i class="devicon-google-plain" style="margin-right:8px;"></i>santiagochez193@gmail.com</a>
+                <a href="https://linkedin.com/in/santiagoxx93" target="_blank" class="btn btn-outline" style="text-align:center;"><i class="devicon-linkedin-plain" style="margin-right:8px;"></i>LinkedIn</a>
+                <a href="https://github.com/santiagoxx93" target="_blank" class="btn btn-outline" style="text-align:center;"><i class="devicon-github-original" style="margin-right:8px;"></i>GitHub</a>
+              </div>
+            </div>
+            <div class="contact-form-container">
+              <form action="mailto:santiagochez193@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Cuéntame en qué te puedo ayudar..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Enviar Correo</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
       </main>
       
       <!-- Footer -->
-      <footer id="contact">
+      <footer>
         <div class="footer-container">
-          <h2>Contacto</h2>
-          <p>¿Buscas un desarrollador proactivo para tu equipo?</p>
-          <div class="social-links">
-            <a href="mailto:santiagochez193@gmail.com" class="btn btn-primary">santiagochez193@gmail.com</a>
-            <a href="https://linkedin.com/" target="_blank" class="btn btn-outline">LinkedIn</a>
-            <a href="https://github.com/" target="_blank" class="btn btn-outline">GitHub</a>
-          </div>
-          <p class="copyright">© 2026 Santiago Sanchez.</p>
+          <p class="copyright">© 2026 Santiago Sanchez. Creado con Vite y Vanilla JS.</p>
         </div>
       </footer>
     </div>
