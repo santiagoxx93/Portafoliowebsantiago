@@ -224,7 +224,7 @@
               </div>
             </div>
             <div class="contact-form-container">
-              <form action="mailto:santiagochez193@gmail.com" method="post" enctype="text/plain" class="contact-form">
+              <form id="contact-form" class="contact-form" onsubmit="return false;">
                 <div class="form-group">
                   <label for="name">Nombre</label>
                   <input type="text" id="name" name="name" placeholder="Tu nombre" required>
@@ -233,7 +233,7 @@
                   <label for="message">Mensaje</label>
                   <textarea id="message" name="message" rows="5" placeholder="Cuéntame en qué te puedo ayudar..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:100%;">Enviar Correo</button>
+                <button type="button" id="send-email-btn" class="btn btn-primary" style="width:100%;">Enviar Correo</button>
               </form>
             </div>
           </div>

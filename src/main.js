@@ -98,5 +98,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+  // --- 6. Contact Form (mailto via JS) ---
+  const sendBtn = document.getElementById('send-email-btn');
+  if (sendBtn) {
+    sendBtn.addEventListener('click', () => {
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      if (!name || !message) {
+        alert('Por favor, completa todos los campos.');
+        return;
+      }
+      
+      const subject = encodeURIComponent(`Contacto desde Portafolio - ${name}`);
+      const body = encodeURIComponent(`Hola Santiago,\n\nMi nombre es ${name}.\n\n${message}`);
+      window.open(`mailto:santiagochez193@gmail.com?subject=${subject}&body=${body}`, '_blank');
+    });
+  }
 
 });
