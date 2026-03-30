@@ -65,36 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeEffect, 500);
   }
 
-  // --- 4. Custom Follow-Cursor ---
-  const cursorDot = document.querySelector('.cursor-dot');
-  const cursorOutline = document.querySelector('.cursor-outline');
-  
-  if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
-    cursorDot.style.display = 'block';
-    cursorOutline.style.display = 'block';
 
-    window.addEventListener('mousemove', (e) => {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      // Undelayed dot
-      cursorDot.style.left = `${posX}px`;
-      cursorDot.style.top = `${posY}px`;
-
-      // Delayed outline stroke using animate for smooth interpolation
-      cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-      }, { duration: 500, fill: 'forwards', easing: 'ease-out' });
-    });
-
-    // Add hover states for interactive elements (buttons, links, svgs)
-    const interactables = document.querySelectorAll('a, button, .hover-icon, .skill-category');
-    interactables.forEach(el => {
-      el.addEventListener('mouseenter', () => cursorOutline.classList.add('hover'));
-      el.addEventListener('mouseleave', () => cursorOutline.classList.remove('hover'));
-    });
-  }
 
   // --- 5. 3D Tilt Effect for Project Cards ---
   const projectCards = document.querySelectorAll('.project-card');
