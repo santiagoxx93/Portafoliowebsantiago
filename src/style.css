@@ -179,6 +179,15 @@ main {
   gap: 1rem;
 }
 
+.hover-icon {
+  transition: var(--transition);
+}
+
+.hover-icon:hover {
+  color: var(--accent-primary);
+  transform: translateY(-3px) scale(1.1);
+}
+
 /* Sections */
 section {
   padding: 6rem 0;
