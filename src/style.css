@@ -278,6 +278,7 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  perspective: 1500px;
 }
 
 .project-card {
@@ -285,9 +286,12 @@ section {
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  transition: var(--transition);
   display: flex;
   flex-direction: column;
+  transform-style: preserve-3d;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  /* The transform transition is handled by JS for the tilt so it's snappy */
+  will-change: transform;
 }
 
 @media (min-width: 768px) {
@@ -466,6 +470,60 @@ footer {
 .copyright {
   color: var(--border-color);
   font-size: 0.9rem;
+}
+
+/* Dynamic Effects (WOW Factor) */
+.cursor-dot, .cursor-outline {
+  position: fixed;
+  top: 0; left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  display: none; /* Default hidden until JS confirms mouse movement (avoids sticky corners on mobile) */
+}
+.cursor-dot {
+  width: 8px; height: 8px;
+  background-color: var(--accent-primary);
+}
+.cursor-outline {
+  width: 40px; height: 40px;
+  border: 2px solid var(--accent-secondary);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+.cursor-outline.hover {
+  width: 80px; height: 80px;
+  background-color: rgba(88, 166, 255, 0.1);
+  border-color: rgba(88, 166, 255, 0.5);
+}
+
+.glow-mesh {
+  position: absolute;
+  top: 10%; right: -15%;
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(88,166,255,0.15) 0%, rgba(13,17,23,0) 60%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  animation: pulseMesh 15s ease-in-out infinite alternate;
+}
+@keyframes pulseMesh {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.6; }
+  100% { transform: scale(1.1) translate(-100px, 50px); opacity: 1; }
+}
+
+.type-cursor {
+  display: inline-block;
+  width: 3px;
+  margin-left: 4px;
+  height: 1.1em;
+  background-color: var(--accent-primary);
+  animation: blink 0.8s step-end infinite;
+  vertical-align: bottom;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* Animations */

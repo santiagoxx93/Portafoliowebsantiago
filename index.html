@@ -31,10 +31,11 @@
         
         <!-- Hero Section -->
         <section id="hero" class="hero">
+          <div class="glow-mesh"></div>
           <div class="hero-content fade-in">
             <span class="hero-greeting">¡Hola! Soy</span>
             <h1 class="hero-title">Santiago <span class="highlight">Sanchez</span></h1>
-            <h2 class="hero-subtitle">Desarrollador Full-Stack</h2>
+            <h2 class="hero-subtitle" style="min-height: 2.5rem;"><span id="typewriter"></span><span class="type-cursor"></span></h2>
             <p class="hero-description">Estudiante de Informática apasionado por la creación de soluciones eficientes. Actualmente en búsqueda de oportunidades de pasantía para aportar mi conocimiento en desarrollo web y de software, y continuar mi crecimiento profesional.</p>
             <div class="hero-cta">
               <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
@@ -238,5 +239,9 @@
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
   </body>
 </html>
