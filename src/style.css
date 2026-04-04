@@ -353,6 +353,37 @@ section {
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #b0c4de;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .project-image {
+    max-width: 100%;
+    min-height: 200px;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-image {
+    border-radius: 16px 0 0 16px;
+  }
+}
+
 .project-content {
   padding: 2.5rem;
   flex: 1;
